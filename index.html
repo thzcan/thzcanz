@@ -60,7 +60,9 @@
     }
 
 
-    /* NAVEGACIÓN */
+    /* =========================
+       NAVEGACIÓN
+       ========================= */
 
     nav {
       position: fixed;
@@ -116,7 +118,9 @@
     }
 
 
-    /* ANIMACIONES */
+    /* =========================
+       ANIMACIONES
+       ========================= */
 
     @keyframes bluePulse {
 
@@ -153,7 +157,9 @@
     }
 
 
-    /* CONTENEDOR */
+    /* =========================
+       CONTENEDOR
+       ========================= */
 
     .container {
       width: min(1050px, calc(100% - 40px));
@@ -161,7 +167,9 @@
     }
 
 
-    /* HERO */
+    /* =========================
+       INICIO
+       ========================= */
 
     .hero {
       min-height: 100vh;
@@ -225,7 +233,9 @@
     }
 
 
-    /* BOTONES */
+    /* =========================
+       BOTONES
+       ========================= */
 
     .hero-buttons {
       margin-top: 30px;
@@ -272,7 +282,9 @@
     }
 
 
-    /* SECCIONES */
+    /* =========================
+       SECCIONES
+       ========================= */
 
     section {
       padding: 100px 0;
@@ -310,7 +322,9 @@
     }
 
 
-    /* PALABRAS NEÓN */
+    /* =========================
+       PALABRAS NEÓN
+       ========================= */
 
     .blue-neon {
       color: #00eaff;
@@ -337,7 +351,9 @@
     }
 
 
-    /* TARJETAS */
+    /* =========================
+       TARJETAS
+       ========================= */
 
     .cards {
       display: grid;
@@ -415,7 +431,9 @@
     }
 
 
-    /* ENFOQUE */
+    /* =========================
+       ENFOQUE
+       ========================= */
 
     .focus {
       display: grid;
@@ -453,7 +471,9 @@
     }
 
 
-    /* FUTURO */
+    /* =========================
+       FUTURO
+       ========================= */
 
     .future {
       border: 1px solid rgba(176, 0, 79, .25);
@@ -491,6 +511,15 @@
       border: 1px solid rgba(255, 255, 255, .06);
 
       color: #b2b2ba;
+
+      transition: .2s;
+    }
+
+    .future-item:hover {
+      border-color: #00eaff;
+
+      box-shadow:
+        0 0 20px rgba(0, 234, 255, .1);
     }
 
     .future-item span {
@@ -503,7 +532,9 @@
     }
 
 
-    /* FRASE */
+    /* =========================
+       FRASE
+       ========================= */
 
     .quote {
       text-align: center;
@@ -531,7 +562,9 @@
     }
 
 
-    /* CONTACTO */
+    /* =========================
+       CONTACTO
+       ========================= */
 
     .contact {
       text-align: center;
@@ -563,7 +596,9 @@
     }
 
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
       text-align: center;
@@ -576,7 +611,9 @@
     }
 
 
-    /* MÓVIL */
+    /* =========================
+       MÓVIL
+       ========================= */
 
     @media (max-width: 750px) {
 
@@ -618,7 +655,9 @@
 <body>
 
 
-  <!-- NAVEGACIÓN -->
+  <!-- =========================
+       NAVEGACIÓN
+       ========================= -->
 
   <nav>
 
@@ -652,7 +691,9 @@
   <main class="container">
 
 
-    <!-- INICIO -->
+    <!-- =========================
+         INICIO
+         ========================= -->
 
     <section class="hero">
 
@@ -667,9 +708,9 @@
         </h1>
 
         <p>
-          Este es mi espacio personal donde muestro
-          lo que realizo, en lo que me centro y aquello
-          que posiblemente desarrollaré en el futuro.
+          Un espacio personal donde muestro lo que realizo,
+          en lo que me centro y hacia dónde quiero llevar
+          mis futuros proyectos.
         </p>
 
         <div class="hero-buttons">
@@ -695,7 +736,9 @@
     </section>
 
 
-    <!-- LO QUE REALIZO -->
+    <!-- =========================
+         LO QUE REALIZO
+         ========================= -->
 
     <section id="realizo">
 
@@ -708,8 +751,8 @@
       </h2>
 
       <p class="section-description">
-        Aquí irá la información sobre las cosas que
-        realizo actualmente.
+        Estas son algunas de las actividades en las que
+        actualmente estoy trabajando.
       </p>
 
 
@@ -723,12 +766,14 @@
           </div>
 
           <h3>
-            Área principal
+            Estudios
           </h3>
 
           <p>
-            Aquí podrás colocar una descripción
-            sobre una de las cosas que realizas.
+            Actualmente estoy
+            <span class="blue-neon">estudiando</span>
+            y trabajando constantemente para salir
+            adelante con mi formación.
           </p>
 
         </div>
@@ -741,12 +786,14 @@
           </div>
 
           <h3>
-            Área secundaria
+            Servidores
           </h3>
 
           <p>
-            Aquí podrás colocar otra actividad,
-            habilidad o trabajo que realizas.
+            Actualmente estoy
+            <span class="blue-neon">desarrollando servidores</span>
+            y adquiriendo experiencia en diferentes
+            áreas relacionadas con Networks.
           </p>
 
         </div>
@@ -759,12 +806,14 @@
           </div>
 
           <h3>
-            Proyectos
+            Inversión
           </h3>
 
           <p>
-            Aquí podrás mostrar los proyectos
-            en los que participas actualmente.
+            Actualmente estoy
+            <span class="wine-neon">invirtiendo en proyectos</span>
+            y organizando la consola de cada proyecto
+            en el que participo.
           </p>
 
         </div>
@@ -775,7 +824,9 @@
     </section>
 
 
-    <!-- ENFOQUE -->
+    <!-- =========================
+         ENFOQUE
+         ========================= -->
 
     <section id="enfoque">
 
@@ -788,9 +839,8 @@
       </h2>
 
       <p class="section-description">
-        Aquí irá la información que tú quieras
-        colocar sobre tus principales intereses,
-        objetivos y áreas de trabajo.
+        Actualmente tengo varios objetivos en los que
+        estoy trabajando y que quiero seguir desarrollando.
       </p>
 
 
@@ -800,12 +850,13 @@
         <div class="focus-box">
 
           <h3>
-            Mi enfoque
+            Estudios
           </h3>
 
           <p>
-            Aquí podrás escribir aquello en lo que
-            principalmente te concentras actualmente.
+            Me estoy enfocando en
+            <span class="blue-neon">salir adelante con mis estudios</span>
+            y continuar mejorando mis conocimientos.
           </p>
 
         </div>
@@ -814,12 +865,14 @@
         <div class="focus-box">
 
           <h3>
-            Mis objetivos
+            Mi objetivo
           </h3>
 
           <p>
-            Aquí podrás colocar tus objetivos
-            personales y profesionales.
+            Mi objetivo es realizar de una buena manera
+            un <span class="wine-neon">proyecto</span> donde
+            varias personas puedan visitarlo, tanto como
+            videojuego o como página web.
           </p>
 
         </div>
@@ -832,8 +885,11 @@
           </h3>
 
           <p>
-            Aquí podrás explicar cómo trabajas
-            y qué buscas aportar a los proyectos.
+            Trabajo diariamente en
+            <span class="wine-neon">inversión y ganancias</span>.
+            De momento se encuentran en 0, simplemente
+            porque los proyectos todavía están en creación
+            y desarrollo.
           </p>
 
         </div>
@@ -846,8 +902,12 @@
           </h3>
 
           <p>
-            Aquí podrás explicar hacia dónde
-            quieres llevar tus proyectos.
+            Quiero llevar mis
+            <span class="blue-neon">proyectos a lo más alto</span>,
+            conseguir que sean conocidos y visitados,
+            y que las personas puedan contactarme si
+            necesitan desarrollar un proyecto, ya sea
+            un <span class="wine-neon">servidor, hosting o proyecto de trabajo</span>.
           </p>
 
         </div>
@@ -858,7 +918,9 @@
     </section>
 
 
-    <!-- FUTURO -->
+    <!-- =========================
+         FUTURO
+         ========================= -->
 
     <section id="futuro">
 
@@ -871,52 +933,33 @@
       </h2>
 
       <p class="section-description">
-        Aquí podrás colocar las cosas que quieres
-        aprender, desarrollar o realizar más adelante.
+        Próximamente.
       </p>
 
 
       <div class="future">
 
-
         <div class="future-list">
 
+          <div class="future-item">
+            <span>◆</span>
+            Próximamente
+          </div>
 
           <div class="future-item">
             <span>◆</span>
-            Próximo proyecto
+            Próximamente
           </div>
-
 
           <div class="future-item">
             <span>◆</span>
-            Nueva habilidad
+            Próximamente
           </div>
-
 
           <div class="future-item">
             <span>◆</span>
-            Nuevo desarrollo
+            Próximamente
           </div>
-
-
-          <div class="future-item">
-            <span>◆</span>
-            Nuevos objetivos
-          </div>
-
-
-          <div class="future-item">
-            <span>◆</span>
-            Nuevas ideas
-          </div>
-
-
-          <div class="future-item">
-            <span>◆</span>
-            Próximos proyectos
-          </div>
-
 
         </div>
 
@@ -925,18 +968,19 @@
     </section>
 
 
-    <!-- FRASE -->
+    <!-- =========================
+         FRASE
+         ========================= -->
 
     <section>
 
       <div class="quote">
 
         <p>
-          "No importa dónde empiece un proyecto,
-          me interesa descubrir
-          <span class="blue">
-            hasta dónde puede llegar
-          </span>."
+          "No importa dónde empiece un
+          <span class="blue">proyecto</span>,
+          me interesa descubrir hasta dónde
+          puede llegar."
         </p>
 
       </div>
@@ -944,7 +988,9 @@
     </section>
 
 
-    <!-- CONTACTO -->
+    <!-- =========================
+         CONTACTO
+         ========================= -->
 
     <section id="contacto">
 
@@ -979,11 +1025,6 @@
 
   </footer>
 
-
-</body>
-</html>
-
-  </div>
 
 </body>
 </html>
